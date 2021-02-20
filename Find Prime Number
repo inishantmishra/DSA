@@ -4,7 +4,7 @@ Best Method-
 
 bool IsPrime(n)
 {
-  for(i=2;i<=sqrt(n);i++)
+  for(i=2;i<=Math.Sqrt(n);i++)
   {
     if(n%i==0) return false;
   }
@@ -17,7 +17,7 @@ Alternative Method 1-
 
 bool IsPrime(n)
 {
-  for(i=2;i<n;i++)
+  for(i=2;i<=n;i++)
   {
     if(n%i==0) return false;
   }

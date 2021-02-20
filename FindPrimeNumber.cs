@@ -1,7 +1,6 @@
-How to find the number is prime or not?
+//How to find the number is prime or not?
 
-Best Method-
-
+//Best Method- Time Complexity- O(sqrt(n))
 bool IsPrime(n)
 {
   for(i=2;i<=Math.Sqrt(n);i++)
@@ -11,10 +10,8 @@ bool IsPrime(n)
   return true;
 }
 
-Time Complexity- O(sqrt(n))
 
-Alternative Method 1-
-
+//Alternative Method 1- Time Complexity- O(n)
 bool IsPrime(n)
 {
   for(i=2;i<=n;i++)
@@ -24,11 +21,9 @@ bool IsPrime(n)
   return true;
 }
 
-Time Complexity- O(n)
 
 
-Alternative Method 2-
-
+//Alternative Method 2- Time Complexity- O(n)
 bool IsPrime(n)
 {
   for(i=2;i<=n/2;i++)
@@ -38,4 +33,4 @@ bool IsPrime(n)
   return true;
 }
 
-Time Complexity- O(n)
+

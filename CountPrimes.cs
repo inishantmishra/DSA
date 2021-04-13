@@ -9,22 +9,22 @@ Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
 */
 
 public class Solution {
-    public int CountPrimes(int n) {
-        int count=0;
-        for(int i=0;i<n; i++)
-        {
-           if(i>1&&IsPrime(i))
-               count= count+1;
-        }
-        return count;
-    }
-    
-    public bool IsPrime(int num)
-    {
-        for (int i=2; i<=Math.Sqrt(num);i++)
-        {
-            if(num%i==0) return false;
-        }
-        return true;
-    }
+   public static void Main(string[] args)  
+      {  
+          int n, i, m=0, flag=0;    
+          Console.Write("Enter the Number to check Prime: ");    
+          n = int.Parse(Console.ReadLine());  
+          m=n/2;    
+          for(i = 2; i <= m; i++)    
+          {    
+           if(n % i == 0)    
+            {    
+             Console.Write("Number is not Prime.");    
+             flag=1;    
+             break;    
+            }    
+          }    
+          if (flag==0)    
+           Console.Write("Number is Prime.");       
+     }  
 }
